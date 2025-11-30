@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-switch">
+      <label for="theme-switch">🌞 / 🌙</label>
+    </div>
+
+    <input type="text" id="display" class="display" disabled />
+
+    <div class="buttons">
+      <button  class="btn" onclick="ClickButton(this)"  >7</button>
+      <button  class="btn" onclick="ClickButton(this)"  >8</button>
+      <button  class="btn" onclick="ClickButton(this)"  >9</button>
+      <button  class="btn  operator" onclick="ClickButton(this)" >/</button>
+
+      <button  class="btn" onclick="ClickButton(this)"  >4</button>
+      <button  class="btn" onclick="ClickButton(this)"  >5</button>
+      <button  class="btn" onclick="ClickButton(this)"  >6</button>
+      <button  class="btn  operator" onclick="ClickButton(this)" >*</button>
+
+      <button  class="btn" onclick="ClickButton(this)" > 1</button>
+      <button  class="btn" onclick="ClickButton(this)"  >2</button>
+      <button  class="btn" onclick="ClickButton(this)"  >3</button>
+      <button  class="btn  operator" onclick="ClickButton(this)" >-</button>
+
+      <button  class="btn" onclick="ClickButton(this)"  >0</button>
+      <button  class="btn" onclick="ClickButton(this)"  >.</button>
+      <button  id="equal" class="btn  equal" onclick="ClickButton(this)" >=</button>
+      <button  class="btn  operator" onclick="ClickButton(this)" >+</button>
+
+      <button class="btn clear" onclick="reset()" >C</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
